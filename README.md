@@ -26,60 +26,60 @@ This project is a MATLAB-based system for multi-objective path optimization that
    - The main script that handles the execution of both the A* and ACO algorithms, including grid initialization, obstacle placement, and target point selection.
 
 2. **Astar_s.m**:
-   - Implements the A* algorithm. It calculates the optimal path between a start and a target point while avoiding obstacles using an open and closed list mechanism【13†source】.
+   - Implements the A* algorithm. It calculates the optimal path between a start and a target point while avoiding obstacles using an open and closed list mechanism.
 
 3. **ACATSP.m**:
-   - Implements the Ant Colony Optimization (ACO) algorithm to solve the Traveling Salesman Problem (TSP) by finding the optimal sequence to visit multiple target points【14†source】.
+   - Implements the Ant Colony Optimization (ACO) algorithm to solve the Traveling Salesman Problem (TSP) by finding the optimal sequence to visit multiple target points.
 
 ### Utility Functions:
 
 1. **direction.m**:
-   - Computes the direction of nodes relative to one another, used to calculate smooth paths between nodes【17†source】.
+   - Computes the direction of nodes relative to one another, used to calculate smooth paths between nodes.
 
 2. **distance.m**:
-   - Computes the Euclidean distance between two points, which is used by both A* and ACO algorithms for heuristic calculations【18†source】.
+   - Computes the Euclidean distance between two points, which is used by both A* and ACO algorithms for heuristic calculations.
 
 3. **expand_array01.p**:
    - Handles the expansion of nodes in the A* algorithm, checking neighboring nodes to determine valid movements.
 
 4. **insert_open.m**:
-   - Populates the open list with nodes during the A* search process【34†source】.
+   - Populates the open list with nodes during the A* search process.
 
 5. **min_fn.m**:
-   - Selects the node with the minimum cost in the open list for expansion in the A* algorithm【37†source】.
+   - Selects the node with the minimum cost in the open list for expansion in the A* algorithm.
 
 6. **MAP.m**:
-   - Initializes the grid map with obstacles and sets up the grid structure for pathfinding【35†source】.
+   - Initializes the grid map with obstacles and sets up the grid structure for pathfinding.
 
 ### Path and Node Indexing Functions:
 
 1. **node_index.m / node_index9.m**:
-   - Provides functionality to retrieve the index of a node in the open or closed list【39†source】【40†source】.
+   - Provides functionality to retrieve the index of a node in the open or closed list.
 
 2. **path_node_index.m**:
-   - Retrieves the index of a node in the path list, helping trace the path back from the target to the start【42†source】.
+   - Retrieves the index of a node in the path list, helping trace the path back from the target to the start.
 
 3. **Optimal_index.m**:
-   - Finds the optimal node index in a given list to guide path generation【41†source】.
+   - Finds the optimal node index in a given list to guide path generation.
 
 ### Angle and Direction Calculation:
 
 1. **myangle.m / sn_angle.m**:
-   - Calculates the angle between nodes or vectors, which helps in ensuring smooth transitions between path segments【38†source】【43†source】.
+   - Calculates the angle between nodes or vectors, which helps in ensuring smooth transitions between path segments.
 
 2. **toDegree.m / toRadian.m**:
-   - Converts angles between degrees and radians, ensuring compatibility with various mathematical operations【53†source】【54†source】.
+   - Converts angles between degrees and radians, ensuring compatibility with various mathematical operations.
 
 ### Grid and Target Handling:
 
 1. **MAX.m**:
-   - Provides the grid map structure with static obstacles【36†source】.
+   - Provides the grid map structure with static obstacles.
 
 2. **Zuo_st.m**:
-   - Sets up the initial start and target points on the grid【55†source】.
+   - Sets up the initial start and target points on the grid.
 
 3. **Target_node.m**:
-   - Handles dynamic target node selection based on the proximity of dynamic obstacles【52†source】.
+   - Handles dynamic target node selection based on the proximity of dynamic obstacles.
 
 ## How to Use
 
